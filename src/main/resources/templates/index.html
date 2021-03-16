@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Spring Boot Thymeleaf Application</title>
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+	<!-- menu and logout -->
+	<div class="container">
+		<h2>Online Quiz</h2>
+		<div id="menuOption" class="well well-sm"></div>
+	</div>
+
+	<!-- login -->
+	<div class="container" id="loginOption">
+		<h2>Login</h2>
+		<div class="container">
+			<div id=message class="alert alert-danger"></div>
+		</div>
+		<form>
+			<div class="form-group">
+				<label>ID:</label> <input type="text" class="form-control"
+					id="loginId" placeholder="Enter ID">
+			</div>
+			<div class="form-group">
+				<label>Password:</label> <input type="password" class="form-control"
+					id="loginPwd" placeholder="Enter password">
+			</div>
+			<button id="loginButton" type="button" class="btn btn-default">LOGIN</button>
+		</form>
+	</div>
+
+	<!-- start exam -->
+	<div class="container" id="startExamOption">
+		<div class="jumbotron">
+			<h4>Exam instruction</h4>
+			<p>There are 5 questions has. Each question has 5 marks. Total 25 marks. The negative mark for each question is 2. 
+			Each question has 2 minutes. Total exam time is 2*5 = 10 minute. If you want you can skip questions after 2 minute period.</p>
+			<button onclick = "startExam()" id="startExamBtn" type="button" class="btn btn-primary">Start Exam</button>
+		</div>
+	</div>
+
+	<!-- question and answer -->
+	<div class="container" id="totalComedown"></div>
+	<div class="container" id="quizQues"></div>
+	<div class="container" id="comedown"></div>
+
+	<!-- result generate -->
+	<div class="container" id="generateResult"></div>
+
+	<!-- Result display -->
+	<div class="container">
+		<div class="jumbotron" id="resultOption"></div>
+	</div>
+
+	<script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+	<script src="js/script.js"></script>
+	<script th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
+</body>
+</html>
