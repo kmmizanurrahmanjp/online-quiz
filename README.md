@@ -13,25 +13,25 @@ http://localhost:9090/swagger-ui.html
 
 
 ## Server and Database information
-Application Server port: 9090
-Database Server: MySQL
-Database Name: online_quiz
-Database Host: localhost
-Database Port: 3306
-Username: mizan
-Password: mizan
+Application Server port: 9090, 
+Database Server: MySQL, 
+Database Name: online_quiz, 
+Database Host: localhost, 
+Database Port: 3306, 
+Username: mizan, 
+Password: mizan, 
 
 
 ## Technology Stacks:
-Spring boot
-Spring data JPA
-Hibernate
-Rest Controller
-SwaggerUI
-MySQL
-Maven
-Bootstrap
-html
-CSS
+Spring boot, 
+Spring data JPA, 
+Hibernate, 
+Rest Controller, 
+SwaggerUI, 
+MySQL, 
+Maven, 
+Bootstrap, 
+html, 
+CSS, 
 jQuery
 
